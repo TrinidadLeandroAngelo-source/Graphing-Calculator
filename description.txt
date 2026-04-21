@@ -1,0 +1,32 @@
+✅ Functions
+- Equation Input: You can type equations like `x^2 + 3x - 2` or `sin(x)` directly into the text box.
+- Smart Parsing: It automatically converts math-friendly syntax (`^` for powers, `3x` into `3*x`, etc.) 
+    so you don’t have to worry about strict Python formatting.
+- Math Functions Supported: Includes common functions like `sin`, `cos`, `tan`, `log`, `sqrt`, `exp`, `abs`, 
+    and constants like `pi`.
+- Interactive Zoom: Sliders let you adjust the X and Y ranges to zoom in/out and explore specific parts of the graph.
+- Reset Button: Quickly resets the view back to default bounds.
+- Grid & Axes: Shows the x-axis and y-axis clearly, with grid 
+    lines for easier math teaching.
+- Constant Handling: If you enter something like `y = 2`, 
+    it correctly plots a horizontal line.
+
+
+⚠️ Limitations
+- No Symbolic Math: It doesn’t solve equations or show algebraic steps 
+    (e.g., finding roots or factoring). It only plots the function numerically.
+- Safe but Limited Evaluation: Only the functions included in the `safe_dict` are allowed. 
+    If you type something outside of that (like `random()` or unsupported libraries), it won’t work.
+- No Multiple Functions at Once: Right now, it only plots one equation at a time. 
+    You’d need to extend it to handle multiple inputs.
+- No Point Inspection: You can zoom, but it doesn’t yet show coordinates 
+    when you hover or click. Students would need to estimate values visually.
+- Performance: It’s fine for teaching, but plotting very complex equations or 
+    huge ranges may slow down or crash the notebook.
+- Notebook Dependency: It runs inside Jupyter Notebook with `%matplotlib widget`. 
+    If you run it outside (like plain Python script), the interactive sliders won’t appear.
+
+
+👉 In short: it’s a teaching tool for visualizing functions interactively, 
+    great for exploring how equations behave, but it’s not a full-blown CAS (Computer Algebra System) like WolframAlpha or Desmos.
+
